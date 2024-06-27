@@ -1,0 +1,83 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notices</title>
+    </head>
+    <body>
+        <h1>CME Group Notices</h1>
+        <ul>
+    <li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/01/20240101.html" target="_blank">2024-01-01</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/01/20240108.html" target="_blank">2024-01-08</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/01/20240115.html" target="_blank">2024-01-15</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/01/20240122.html" target="_blank">2024-01-22</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/01/20240129.html" target="_blank">2024-01-29</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/02/20240202.html" target="_blank">2024-02-02</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/02/20240205.html" target="_blank">2024-02-05</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/02/20240212.html" target="_blank">2024-02-12</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/02/20240219.html" target="_blank">2024-02-19</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/02/20240226.html" target="_blank">2024-02-26</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/03/20240304.html" target="_blank">2024-03-04</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/03/20240308.html" target="_blank">2024-03-08</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/03/20240311.html" target="_blank">2024-03-11</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/03/20240318.html" target="_blank">2024-03-18</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/03/20240325.html" target="_blank">2024-03-25</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/04/20240401.html" target="_blank">2024-04-01</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/04/20240408.html" target="_blank">2024-04-08</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/04/20240415.html" target="_blank">2024-04-15</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/04/20240422.html" target="_blank">2024-04-22</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/04/20240429.html" target="_blank">2024-04-29</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/05/20240506.html" target="_blank">2024-05-06</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/05/20240513.html" target="_blank">2024-05-13</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/05/20240520.html" target="_blank">2024-05-20</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/05/20240527.html" target="_blank">2024-05-27</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/06/20240603.html" target="_blank">2024-06-03</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/06/20240610.html" target="_blank">2024-06-10</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/06/20240617.html" target="_blank">2024-06-17</a></li>
+<li><a href="https://www.cmegroup.com/notices/electronic-trading/2024/06/20240624.html" target="_blank">2024-06-24</a></li>
+
+        </ul>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function () {
+                var links = document.querySelectorAll('ul li a');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        var url = event.target.href;
+                        var newWindow = window.open(url, '_blank');
+                        newWindow.onload = function() {
+                            var translateButton = newWindow.document.createElement('button');
+                            translateButton.textContent = 'Translate to Korean';
+                            translateButton.style.position = 'fixed';
+                            translateButton.style.top = '10px';
+                            translateButton.style.right = '10px';
+                            translateButton.style.zIndex = 1000;
+                            translateButton.onclick = function() {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en',
+                                    includedLanguages: 'ko',
+                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                }, 'google_translate_element');
+                            };
+                            newWindow.document.body.appendChild(translateButton);
+                            var script = newWindow.document.createElement('script');
+                            script.type = 'text/javascript';
+                            script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                            newWindow.document.head.appendChild(script);
+                        };
+                    });
+                });
+            });
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'ko',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+    </body>
+    </html>
+    
